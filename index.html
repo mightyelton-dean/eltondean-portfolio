@@ -28,61 +28,10 @@
         html {
             scroll-behavior: smooth;
         }
-        
-        /* Dark Mode Toggle Button */
-        #darkModeToggle {
-            background: transparent;
-            border: none;
-            color: var(--text-color);
-            cursor: pointer;
-            font-size: 1.2rem;
-            padding: 0.5rem;
-            position: absolute;
-            right: 15px;
-            top: 15px;
-            z-index: 1000;
-        }
-        
-        /* Dark Mode Variables */
-        :root {
-            /* Light theme (default) */
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --navbar-bg: #f8f9fa;
-            --card-bg: #f8f9fa;
-        }
-        
-        [data-theme="dark"] {
-            /* Dark theme */
-            --bg-color: #121212;
-            --text-color: #f8f9fa;
-            --navbar-bg: #1a1a1a;
-            --card-bg: #1e1e1e;
-        }
-        
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-        
-        .navbar {
-            background-color: var(--navbar-bg) !important;
-        }
-        
-        .card, .service-item, .price-item, .team-item, .blog-item {
-            background-color: var(--card-bg) !important;
-            transition: background 0.3s ease;
-        }
     </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Dark Mode Toggle -->
-    <button id="darkModeToggle" aria-label="Dark mode toggle">
-        <i class="fas fa-moon"></i> <!-- Default = light mode -->
-    </button>
-
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
@@ -109,97 +58,798 @@
     </div>
     <!-- Nav Bar End -->
 
-    <!-- Rest of your HTML content remains exactly the same -->
     <!-- Hero Start -->
     <div class="hero" id="home">
-        <!-- ... your existing hero section ... -->
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <p>I'm</p>
+                            <h1><i> eltondeantech </i></h1>
+                            <h2></h2>
+                            <div class="typed-text">Web Designer, Web Developer, fullstack Developer, Apps Designer, Apps Developer</div>
+                        </div>
+                        <div class="hero-btn">
+                            <a class="btn" href="ifechukwumosesnnajieze@gmail.com">
+                                <i class="fas fa-envelope"></i> Email Me
+                            </a>
+                            <a class="btn" href="https://wa.link/j8tzah" target="_blank">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a class="btn" href="#contact">
+                                <i class="fas fa-briefcase"></i> Hire Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <div class="hero-image">
+                        <img src="img/image__3_-removebg-preview.png" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Hero End -->
-    
-    <!-- ... all other sections remain unchanged ... -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- About Start -->
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="img/about-img.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-header text-left">
+                            <p>Learn About Me</p>
+                            <h2>4 Years+ Experience</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                I'm a passionate web developer and programmer with a knack for crafting innovative digital solutions. From building sleek websites and mobile apps to creating trading bots, WhatsApp bots, and Telegram bots, I thrive on turning ideas into reality. My expertise spans web development, mobile and desktop app creation, graphic design, networking, and the exciting world of Web3. With a toolkit that includes HTML, CSS, JavaScript, Python, React, and Node.js, I build seamless, user-focused experiences that stand out. 
+                            </p>
+                        </div>
+                        <div class="skills">
+                            <div class="skill-name">
+                                <p>Web Design</p><p>85%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Web Development</p><p>95%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Apps Design</p><p>90%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Apps Development</p><p>85%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <a class="btn" href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
     
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <!-- Service Start -->
+    <div class="service" id="service">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>What I Do</p>
+                <h2>Awesome Quality Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Web Design</h3>
+                            <p>
+                                I craft visually stunning and user-friendly websites that captivate audiences. Using modern tools like Figma and Adobe XD, I design responsive, intuitive interfaces tailored to your brand's vision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop-code"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Web Development</h3>
+                            <p>
+                                I build robust, scalable websites and web apps using technologies like HTML, CSS, JavaScript, React, and Node.js. From e-commerce platforms to custom solutions, I deliver seamless performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Mobile App Development</h3>
+                            <p>
+                                I develop high-performance mobile apps for Android and iOS using Flutter and React Native. Whether it's a sleek user app or a complex backend integration, I bring your ideas to life.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-desktop"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Desktop App Development</h3>
+                            <p>
+                                I create powerful desktop applications tailored to your needs, using tools like Electron and Python. My solutions ensure smooth functionality and cross-platform compatibility.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-robot"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Bot Development</h3>
+                            <p>
+                                I specialize in building trading, WhatsApp, and Telegram bots that automate tasks and enhance user engagement. My bots are efficient, secure, and customized to your goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="1.0s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-shield-alt"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Ethical Hacking & Networking</h3>
+                            <p>
+                                I provide secure networking solutions and ethical hacking services to protect your digital assets. From penetration testing to network optimization, I ensure robust security.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+    
+    <!-- Experience Start -->
+    <div class="experience" id="experience">
+        <div class="container">
+            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Resume</p>
+                <h2>Working Experience</h2>
+            </header>
+            <div class="timeline">
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h2>Full-Stack Web Developer</h2>
+                        <h4>Freelance, Remote</h4>
+                        <p>
+                            Developed responsive websites and web applications for clients across industries using HTML, CSS, JavaScript, React, and Node.js. Delivered e-commerce platforms and custom CMS solutions, enhancing user engagement and functionality.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2023 - 2025</div>
+                        <h2>Mobile App Developer</h2>
+                        <h4>Tech Startup, Lagos, Nigeria</h4>
+                        <p>
+                            Built cross-platform mobile apps for Android and iOS using Flutter and React Native. Integrated APIs and optimized app performance, resulting in a 30% increase in user retention for a fintech application.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h2>Bot Developer</h2>
+                        <h4>Freelance, Remote</h4>
+                        <p>
+                            Designed and deployed trading bots, WhatsApp bots, and Telegram bots using Python and JavaScript. Automated client workflows, improving efficiency and enabling real-time user interactions.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <h2>Web3 Developer</h2>
+                        <h4>Blockchain Startup, Remote</h4>
+                        <p>
+                            Developed decentralized applications (dApps) and smart contracts using Solidity and Ethereum. Integrated Web3 wallets and APIs, creating secure, user-friendly blockchain solutions for NFT marketplaces.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2022 - 2025</div>
+                        <h2>Ethical Hacker & Security Consultant</h2>
+                        <h4>Tech Consultancy, Lagos, Nigeria</h4>
+                        <p>
+                            Conducted penetration testing and vulnerability assessments for corporate networks. Implemented security protocols and trained teams, reducing security risks by 40% for clients.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2022 - 2025</div>
+                        <h2>Graphic Designer</h2>
+                        <h4>Creative Agency, Abuja, Nigeria</h4>
+                        <p>
+                            Created visually compelling designs for digital and print media using Adobe XD and Photoshop. Collaborated with clients to deliver brand-aligned graphics, boosting engagement for marketing campaigns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Job Experience End -->
+    
+    <!-- Banner Start -->
+    <div class="banner wow zoomIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Affordable Excellence</p>
+                <h2>Get a <span>Special</span> Deal Today</h2>
+            </div>
+            <div class="container banner-text">
+                <p>
+                    Ready to bring your ideas to life? I offer top-notch web development, mobile apps, trading and messaging bots, Web3 solutions, ethical hacking, and graphic design at unbeatable prices. Let's create something extraordinary together—reach out now for a custom quote!
+                </p>
+                <a class="btn" href="https://wa.link/j8tzah" target="_blank">Contact Me on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!-- Portfolio Start -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Portfolio</p>
+                <h2>My Excellent Portfolio</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul id="portfolio-filter">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-1">Web Design</li>
+                        <li data-filter=".filter-2">Mobile Apps</li>
+                        <li data-filter=".filter-3">Game Dev</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-1.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>eCommerce Website</h3>
+                            <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-2.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Product Landing Page</h3>
+                            <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-3.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>JavaScript quiz game</h3>
+                            <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-4.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>JavaScript drawing</h3>
+                            <a class="btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-5.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Social Mobile Apps</h3>
+                            <a class="btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-6.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Company Website</h3>
+                            <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
     
-    <!-- Dark Mode Script -->
-    <script>
-        const toggle = document.getElementById('darkModeToggle');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    <!-- Banner Start -->
+    <div class="banner wow zoomIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Awesome Discount</p>
+                <h2>Get <span>30%</span> Discount</h2>
+            </div>
+            <div class="container banner-text">
+                <p>
+                    Launch your next project with a 30% discount! From stunning websites and mobile apps to custom bots, Web3 solutions, and secure ethical hacking services, I deliver top-quality results tailored to your vision. Message me now to claim this limited-time offer!
+                </p>
+                <a class="btn" href="https://wa.link/j8tzah" target="_blank">Claim Discount on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->        
+    
+    <!-- Price Start -->
+    <div class="price" id="price">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Pricing Plan</p>
+                <h2>Affordable Excellence</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="price-item">
+                        <div class="price-header">
+                            <div class="price-title">
+                                <h2>Basic</h2>
+                            </div>
+                            <div class="price-prices">
+                                <h2><small>₦</small>350,000</h2>
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+                                    <li>Static Website (up to 5 pages)</li>
+                                    <li>Responsive Design</li>
+                                    <li>Basic SEO Optimization</li>
+                                    <li>1 Month Support</li>
+                                    <li>Custom Graphics</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                                <a class="btn" href="https://wa.link/j8tzah" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="price-item featured-item">
+                        <div class="price-header">
+                            <div class="price-title">
+                                <h2>Standard</h2>
+                            </div>
+                            <div class="price-prices">
+                                <h2><small>₦</small>550,000</h2>
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+                                    <li>Dynamic Website or App</li>
+                                    <li>Responsive Design</li>
+                                    <li>Advanced SEO & Analytics</li>
+                                    <li>3 Months Support</li>
+                                    <li>Custom Bot Integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                                <a class="btn" href="https://wa.link/j8tzah" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="price-item">
+                        <div class="price-header">
+                            <div class="price-title">
+                                <h2>Premium</h2>
+                            </div>
+                            <div class="price-prices">
+                                <h2><small>₦</small>1,000,000</h2>
+                            </div>
+                        </div>
+                        <div class="price-body">
+                            <div class="price-description">
+                                <ul>
+                                    <li>Web3 dApp or Complex App</li>
+                                    <li>Responsive & Secure Design</li>
+                                    <li>Full SEO & Marketing Setup</li>
+                                    <li>6 Months Support</li>
+                                    <li>Ethical Hacking Audit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price-footer">
+                            <div class="price-action">
+                                <a class="btn" href="https://wa.link/j8tzah" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Price End -->
+    
+    <!-- Testimonial Start -->
+    <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+        <div class="container">
+            <div class="testimonial-icon">
+                <i class="fa fa-quote-left"></i>
+            </div>
+            <div class="owl-carousel testimonials-carousel">
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/testimonial-1.jpg" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Nnajieze delivered an exceptional e-commerce website that transformed our online presence. The responsive design and seamless functionality have significantly boosted our sales!
+                        </p>
+                        <h3>Amaka Okoye</h3>
+                        <h4>Small Business Owner</h4>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/testimonial-2.jpg" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            The custom Telegram bot developed for our community was a game-changer. Nnajieze's expertise and quick turnaround made the process smooth and highly effective.
+                        </p>
+                        <h3>Chidi Eze</h3>
+                        <h4>Community Manager</h4>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/testimonial-3.jpg" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Working with Nnajieze on our Web3 project was incredible. Their knowledge of smart contracts and secure development delivered a flawless NFT platform for our startup.
+                        </p>
+                        <h3>Fatima Bello</h3>
+                        <h4>Blockchain Entrepreneur</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Team Start -->
+    <div class="team" id="team">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Team</p>
+                <h2>Expert Team Members</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-1.jpg" alt="Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Mollie Ross</h2>
+                            <h4>Web Designer</h4>
+                            <p>
+                                Mollie crafts visually stunning website interfaces with a focus on user experience. Her expertise in Figma and Adobe XD ensures responsive, brand-aligned designs that captivate audiences.
+                            </p>
+                            <div class="team-social">
+                                <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-2.jpg" alt="Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Dylan Adams</h2>
+                            <h4>Web Developer</h4>
+                            <p>
+                                Dylan builds robust web applications using React, Node.js, and JavaScript. His knack for seamless backend integration delivers fast, scalable solutions for clients.
+                            </p>
+                            <div class="team-social">
+                                <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-3.jpg" alt="Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Jennifer Page</h2>
+                            <h4>Apps Designer</h4>
+                            <p>
+                                Jennifer designs intuitive mobile app interfaces with Flutter and Sketch. Her user-centric approach creates engaging, cross-platform experiences that drive retention.
+                            </p>
+                            <div class="team-social">
+                                <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/team-4.jpg" alt="Image">
+                        </div>
+                        <div class="team-text">
+                            <h2>Josh Dunn</h2>
+                            <h4>Apps Developer</h4>
+                            <p>
+                                Josh develops high-performance mobile and desktop apps using React Native and Python. His focus on clean code ensures reliable, scalable solutions for complex projects.
+                            </p>
+                            <div class="team-social">
+                                <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+    
+    <!-- Contact Start -->
+    <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <div class="contact-form">
+                            <div id="success"></div>
+                            <form name="sentMessage" id="contactForm" action="https://formspree.io/f/mdkzdqlr" method="POST" novalidate="novalidate">
+                                <div class="control-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block"></p>
+                                </div>
+                                <div class="control-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block"></p>
+                                </div>
+                                <div class="control-group">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                    <p class="help-block"></p>
+                                </div>
+                                <div class="control-group">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                    <p class="help-block"></p>
+                                </div>
+                                <input type="hidden" name="_next" value="" />
+                                <div>
+                                    <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                </div>
+                                <div class="whatsapp-option">
+                                    <p>Or reach me directly on <a href="https://wa.link/j8tzah" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    
+    <!-- Blog Start -->
+    <div class="blog" id="blog">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Our Blog</p>
+                <h2>Latest Articles</h2>
+            </div>
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-6">
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="blog-img">
+                            <img src="img/blog-1.jpg" alt="Blog">
+                        </div>
+                        <div class="blog-text">
+                            <h2>Top 5 Web Design Trends in 2025</h2>
+                            <div class="blog-meta">
+                                <p><i class="far fa-user"></i>Admin</p>
+                                <p><i class="far fa-list-alt"></i>Web Design</p>
+                                <p><i class="far fa-calendar-alt"></i>01-Jan-2025</p>
+                                <p><i class="far fa-comments"></i>5</p>
+                            </div>
+                            <p>
+                                As technology evolves, so does design. In this article, we explore the hottest trends shaping the future of web design in 2025, from dark mode interfaces to interactive 3D elements and AI-powered layouts.
+                            </p>
+                            <a class="btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Blog Post 2 -->
+            <div class="col-lg-6">
+                <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-img">
+                        <img src="img/blog-2.jpg" alt="Blog">
+                    </div>
+                    <div class="blog-text">
+                        <h2>Why UI/UX Matters for Your Mobile App</h2>
+                        <div class="blog-meta">
+                            <p><i class="far fa-user"></i>Admin</p>
+                            <p><i class="far fa-list-alt"></i>App Design</p>
+                            <p><i class="far fa-calendar-alt"></i>01-Jan-2025</p>
+                            <p><i class="far fa-comments"></i>10</p>
+                        </div>
+                        <p>
+                            A beautiful app is great—but a usable one is essential. Learn why user interface and experience design are critical for success in today’s competitive app market, and how to get them right.
+                        </p>
+                        <a class="btn" href="#">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+
+       <!-- Footer Start -->
+<div class="footer wow fadeIn" data-wow-delay="0.3s">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="footer-info">
+                <h2></h2>
+                <h3>Lekki Phase 1, Lagos, Nigeria</h3>
+                <div class="footer-menu">
+                    <p>+234 703 147 6914</p>
+                    <p>+234 906 434 5714</p>
+                    <p>ifechukwumosesnnajieze@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://x.com/cyberGodofearth" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=100087968664653" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; <a href="#">eltondeantech 2025</a>, All Rights Reserved | 
+            Designed By <a href="https://wa.link/j8tzah">Ifechukwu Moses Nnajieze</a></p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+ 
         
-        // Set initial theme
-        function setInitialTheme() {
-            if (localStorage.getItem('theme') === 'dark' || 
-                (localStorage.getItem('theme') === null && prefersDark.matches)) {
-                enableDarkMode();
-            }
-        }
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
         
-        // Enable dark mode
-        function enableDarkMode() {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            toggle.innerHTML = '<i class="fas fa-sun"></i>';
-            localStorage.setItem('theme', 'dark');
-        }
         
-        // Enable light mode
-        function enableLightMode() {
-            document.documentElement.setAttribute('data-theme', 'light');
-            toggle.innerHTML = '<i class="fas fa-moon"></i>';
-            localStorage.setItem('theme', 'light');
-        }
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
         
-        // Toggle function
-        toggle.addEventListener('click', () => {
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            if (isDark) {
-                enableLightMode();
-            } else {
-                enableDarkMode();
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#contactForm").validate({
+            submitHandler: function(form) {
+                $.ajax({
+                    url: form.action,
+                    type: form.method,
+                    data: $(form).serialize(),
+                    success: function(response) {
+                        $("#success").html("<div class='alert alert-success'>Message sent! I'll get back to you soon.</div>");
+                        form.reset();
+                    },
+                    error: function() {
+                        $("#success").html("<div class='alert alert-danger'>Error sending message. Please try again.</div>");
+                    }
+                });
+                return false; // Prevent default form submission
             }
         });
-        
-        // Initialize
-        setInitialTheme();
-    </script>
-    
-    <!-- Form Validation Script -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#contactForm").validate({
-                submitHandler: function(form) {
-                    $.ajax({
-                        url: form.action,
-                        type: form.method,
-                        data: $(form).serialize(),
-                        success: function(response) {
-                            $("#success").html("<div class='alert alert-success'>Message sent! I'll get back to you soon.</div>");
-                            form.reset();
-                        },
-                        error: function() {
-                            $("#success").html("<div class='alert alert-danger'>Error sending message. Please try again.</div>");
-                        }
-                    });
-                    return false;
-                }
-            });
-        });
-    </script>
-</body>
+    });
+</script>
+    </body>
 </html>
